@@ -5,7 +5,7 @@ import logo from "../image/brand_logo.png";
 const Header = () => {
   return (
     <div>
-      <div className="header py-5">
+      <div className="header mt-6">
         <div className="container mx-auto">
           <div className="nav-wrapper flex justify-between items-center">
             <div className="logo">

@@ -6,7 +6,7 @@ import heroImg from "../image/shoe_image.png";
 const Hero = () => {
   return (
     <div>
-      <div className="hero h-lvh mt-[-83px] flex justify-center items-center">
+      <div className="hero h-lvh mt-[-68px] flex justify-center items-center">
         <div className="container mx-auto">
           <div className="hero-wrapper flex justify-between">
             <div className="hero-left w-1/2">
