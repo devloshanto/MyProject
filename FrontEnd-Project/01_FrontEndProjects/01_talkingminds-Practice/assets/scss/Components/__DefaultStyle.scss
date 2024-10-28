@@ -1,3 +1,7 @@
+// Import Style
+
+@import '../Components/__Variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +20,8 @@ img {
     width: 100%;
 }
 
-// Import Style
-
-@import '../Components/__Variables';
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: $fz16;
+    color: $darkGray;
+}

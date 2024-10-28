@@ -1,0 +1,39 @@
+.navigation {
+    .navbar {
+        .navbar-brand {
+            a {
+
+                img {}
+            }
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 10px;
+            margin-right: 1em;
+
+            .nav-item {
+
+                .nav-link {
+                    font-size: $fz16;
+                    font-weight: $fw-Bold;
+                    color: $darkGray;
+                    padding: 10px 20px;
+
+                    &:active {
+                        color: $primaryTeal;
+                        background: $primaryLightTeal;
+                    }
+
+                    &:hover {}
+                }
+            }
+        }
+
+        .navBtn {
+            a {
+                i {}
+            }
+        }
+    }
+}
