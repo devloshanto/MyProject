@@ -1,0 +1,98 @@
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+
+    &__left {
+        &--top {
+            margin-bottom: 80px;
+
+            h1 {
+                font-size: $fz54;
+                font-weight: $fw-Exbold;
+                color: $darkGray;
+
+            }
+
+            p {
+                font-size: $fz20;
+                color: $LightGray;
+                font-weight: $fw-Medium;
+            }
+
+            .hero__btns {
+                display: flex;
+                gap: 15px;
+
+                .btn {
+                    padding: 15px 30px;
+                    border-radius: 50px;
+                    font-weight: $fw-Smibold;
+                }
+
+                .hero__btn--primary {
+                    background: $primaryTeal;
+                    color: $white;
+                    transition: all .35s ease-in-out;
+
+                    &:hover {
+                        box-shadow: rgba(38, 171, 162, 0.411) 0px 4px 12px;
+                    }
+                }
+
+                .hero__btn--yellow {
+                    border: 1px solid $yellow;
+                    color: $yellow;
+                    transition: all .35s ease-in-out;
+
+                    &:hover {
+                        background: $yellow;
+                        color: $white;
+                        box-shadow: rgb(255 193 7 / 41%) 0px 4px 12px;
+                    }
+                }
+
+            }
+        }
+
+        &--bottom {
+            .counter__wrapper {
+                h3 {
+                    font-size: $fz42;
+                    font-weight: $fw-Exbold;
+                    color: $yellow;
+                    line-height: 160%;
+                    position: relative;
+
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 50%;
+                        background: $primaryLightTeal;
+
+                    }
+                }
+
+                p {
+                    font-size: $fz18;
+                    color: $darkGray;
+                    font-weight: $fw-Medium;
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 80%;
+            border-radius: 100px 0px 100px 0px;
+        }
+    }
+}
