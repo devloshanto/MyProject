@@ -1,6 +1,7 @@
 import React from "react";
 
 import logo from "../image/brand_logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,43 +10,49 @@ const Header = () => {
         <div className="container mx-auto">
           <div className="nav-wrapper flex justify-between items-center">
             <div className="logo">
-              <a href="#">
+              <Link to={"/"}>
                 <img src={logo} alt="logo" />
-              </a>
+              </Link>
             </div>
             <div className="menu flex gap-9">
-              <a
-                href="#"
+              <Link
+                to={"/"}
                 className="text-xl font-medium hover:text-red-600 transition-all"
               >
-                Menu
-              </a>
-              <a
-                href="#"
-                className="text-xl font-medium hover:text-red-600 transition-all"
-              >
-                Location
-              </a>
-              <a
-                href="#"
+                Home
+              </Link>
+              <Link
+                to={"/About"}
                 className="text-xl font-medium hover:text-red-600 transition-all"
               >
                 About
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to={"/Works"}
+                className="text-xl font-medium hover:text-red-600 transition-all"
+              >
+                Work
+              </Link>
+              <Link
+                to={"/Blog"}
+                className="text-xl font-medium hover:text-red-600 transition-all"
+              >
+                Blog
+              </Link>
+              <Link
+                to={"/Contact"}
                 className="text-xl font-medium hover:text-red-600 transition-all"
               >
                 Contact
-              </a>
+              </Link>
             </div>
             <div className="nav-btn inline-block">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-xl text-white font-medium bg-red-600 py-3 px-7 rounded-lg hover:bg-red-500  transition-colors"
               >
                 Login
-              </a>
+              </Link>
             </div>
           </div>
         </div>
