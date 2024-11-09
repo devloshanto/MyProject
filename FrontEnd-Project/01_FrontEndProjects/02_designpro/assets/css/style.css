@@ -203,11 +203,32 @@ ul li {
 .hero .heroImg-right {
   position: absolute;
   right: 15%;
-  bottom: -10%;
+  bottom: -15%;
 }
 .hero .heroImg-right img {
-  width: 300px;
+  width: 350px;
   animation: animationRight 5s cubic-bezier(0.12, 0, 0.39, 0) 1s infinite alternate-reverse both;
+}
+
+.work {
+  padding-top: 20px;
+  padding-bottom: 150px;
+}
+.work .work-img {
+  width: 400px;
+  padding-bottom: 15px;
+}
+.work .work-wrapper .work-item {
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.work .work-wrapper .work-item img {
+  transition: all 0.35s ease-in-out;
+}
+.work .work-wrapper .work-item img:hover {
+  transform: scale(1.1);
 }
 
 body {
