@@ -1,0 +1,131 @@
+@mixin btn {
+
+    font-size: $fz20;
+    font-family: $ff-Bricolage;
+    font-weight: $fw500;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+@mixin btnPrimary {
+    background-color: $primary-Orange;
+    border: 2px solid $Black;
+    color: $white;
+    transition: all .35s ease-in-out;
+
+    &:hover {
+        background: $Black;
+        border: 2px solid $primary-Orange;
+    }
+}
+
+@mixin btnSeandary {
+
+    background-color: $Black;
+    border: 2px solid $primary-Orange;
+    color: $white;
+    transition: all .35s ease-in-out;
+
+    &:hover {
+        background: $primary-Orange;
+        border: 2px solid $Black;
+    }
+}
+
+
+// Animation
+@keyframes animationLeft {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateX(-48px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateX(-26px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateX(-13px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateX(-6.5px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateX(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        animation-timing-function: ease-out;
+        transform: translateX(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+@keyframes animationRight {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateX(48px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateX(26px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateX(13px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateX(6.5px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateX(4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        animation-timing-function: ease-out;
+        transform: translateX(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

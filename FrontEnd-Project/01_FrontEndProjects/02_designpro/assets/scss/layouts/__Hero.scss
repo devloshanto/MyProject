@@ -1,0 +1,85 @@
+.hero {
+    padding-top: 140px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+
+    .hero-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        .hero-top {
+            display: inline-block;
+            border: 1px solid $Gary;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-size: $fz16;
+            font-family: $ff-Bricolage;
+            font-weight: $fw500;
+            color: $Black;
+            margin-bottom: 10px;
+        }
+
+        .hero-heading {
+            font-family: $ff-Bricolage;
+            font-weight: $fw600;
+            font-size: $fz80;
+        }
+
+        .hero-pera {
+            font-size: $fz20;
+            color: $Black;
+            font-weight: $fw400;
+            padding: 10px 10%;
+            line-height: 30px;
+        }
+
+        .hero-btn {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .hero__btn {
+                @include btn;
+            }
+
+            .HerobtnPrimary {
+                @include btnPrimary;
+            }
+
+            .Herobtnblack {
+                @include btnSeandary;
+            }
+        }
+    }
+
+    .heroImg-left {
+        position: absolute;
+        left: 15%;
+        top: 40%;
+
+        img {
+            width: 200px;
+            height: 200px;
+
+            /* Copy code to element you want to animate */
+            animation: animationLeft 5s cubic-bezier(0.12, 0, 0.39, 0) 1s infinite alternate-reverse both;
+
+            /* Copy this code after the above code */
+
+
+        }
+    }
+
+    .heroImg-right {
+        position: absolute;
+        right: 15%;
+        bottom: -10%;
+
+        img {
+            width: 300px;
+            animation: animationRight 5s cubic-bezier(0.12, 0, 0.39, 0) 1s infinite alternate-reverse both;
+        }
+    }
+}

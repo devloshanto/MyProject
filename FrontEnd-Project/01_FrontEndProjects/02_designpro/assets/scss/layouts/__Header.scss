@@ -1,0 +1,50 @@
+.header {
+    padding-top: 20px;
+
+    .navbar-nav {
+        background: $Black;
+        padding: 10px;
+        padding-left: 20px;
+        border-radius: 50px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .nav-item {
+
+            .nav-link {
+                color: $white;
+                font-size: $fz16;
+                font-family: $ff-Bricolage;
+                font-weight: $fw500;
+                transition: all .35s ease-in-out;
+
+                &:hover {
+                    color: $primary-Orange;
+                }
+
+            }
+        }
+
+        .nav-btn {
+            background: $primary-Orange;
+
+            font-size: $fz16;
+            font-family: $ff-Bricolage;
+            font-weight: $fw500;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid #eee;
+            color: $white;
+            transition: all .35s ease-in-out;
+
+            &:hover {
+                background: $light-Orange;
+                color: $Black;
+                border: 1px solid $primary-Orange;
+            }
+        }
+
+    }
+}

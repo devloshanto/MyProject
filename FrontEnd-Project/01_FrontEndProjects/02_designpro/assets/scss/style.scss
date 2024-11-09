@@ -1,0 +1,15 @@
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap');
+
+// ========== Base Style Files ==========
+@import "./base/__AllCommonFiles";
+// ========== Layout Style Files ==========
+@import "./layouts/__AllLayoutsFiles";
+
+
+// ========== Body Style  ==========
+body {
+    font-family: $ff-Manrope;
+    font-size: $fz16;
+    background-color: $light-Orange;
+}

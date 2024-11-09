@@ -1,0 +1,39 @@
+.bar {
+    width: 2px;
+    background: #d1d1d1;
+    height: 1rem;
+}
+
+.nav-top {
+    border-bottom: 1px solid #d1d1d1;
+    padding: 20px 0px;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.custom-dropdown {
+    position: relative;
+
+    &:hover {
+        ul {
+            display: block;
+        }
+
+
+    }
+
+    ul {
+        display: none;
+        min-width: 100px;
+        position: absolute;
+        z-index: 99;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 0.15rem;
+        margin-top: 0.5rem;
+        box-shadow: 0 1px 7px -2px rgb(0 0 0 /30%);
+
+    }
+}

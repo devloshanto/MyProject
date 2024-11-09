@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+@keyframes animationLeft {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(-48px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(-26px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(-13px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(-6.5px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(-4px);
+  }
+  25%, 55%, 75%, 87%, 98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animationRight {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(48px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(26px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(13px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(6.5px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(4px);
+  }
+  25%, 55%, 75%, 87%, 98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.header {
+  padding-top: 20px;
+}
+.header .navbar-nav {
+  background: #101010;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Bricolage Grotesque";
+  font-weight: 500;
+  transition: all 0.35s ease-in-out;
+}
+.header .navbar-nav .nav-item .nav-link:hover {
+  color: #ff4f01;
+}
+.header .navbar-nav .nav-btn {
+  background: #ff4f01;
+  font-size: 16px;
+  font-family: "Bricolage Grotesque";
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  color: #ffffff;
+  transition: all 0.35s ease-in-out;
+}
+.header .navbar-nav .nav-btn:hover {
+  background: #fff6ec;
+  color: #101010;
+  border: 1px solid #ff4f01;
+}
+
+.hero {
+  padding-top: 140px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.hero .hero-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero .hero-wrapper .hero-top {
+  display: inline-block;
+  border: 1px solid #77777d;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "Bricolage Grotesque";
+  font-weight: 500;
+  color: #101010;
+  margin-bottom: 10px;
+}
+.hero .hero-wrapper .hero-heading {
+  font-family: "Bricolage Grotesque";
+  font-weight: 600;
+  font-size: 80px;
+}
+.hero .hero-wrapper .hero-pera {
+  font-size: 20px;
+  color: #101010;
+  font-weight: 400;
+  padding: 10px 10%;
+  line-height: 30px;
+}
+.hero .hero-wrapper .hero-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.hero .hero-wrapper .hero-btn .hero__btn {
+  font-size: 20px;
+  font-family: "Bricolage Grotesque";
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+.hero .hero-wrapper .hero-btn .HerobtnPrimary {
+  background-color: #ff4f01;
+  border: 2px solid #101010;
+  color: #ffffff;
+  transition: all 0.35s ease-in-out;
+}
+.hero .hero-wrapper .hero-btn .HerobtnPrimary:hover {
+  background: #101010;
+  border: 2px solid #ff4f01;
+}
+.hero .hero-wrapper .hero-btn .Herobtnblack {
+  background-color: #101010;
+  border: 2px solid #ff4f01;
+  color: #ffffff;
+  transition: all 0.35s ease-in-out;
+}
+.hero .hero-wrapper .hero-btn .Herobtnblack:hover {
+  background: #ff4f01;
+  border: 2px solid #101010;
+}
+.hero .heroImg-left {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+.hero .heroImg-left img {
+  width: 200px;
+  height: 200px;
+  /* Copy code to element you want to animate */
+  animation: animationLeft 5s cubic-bezier(0.12, 0, 0.39, 0) 1s infinite alternate-reverse both;
+  /* Copy this code after the above code */
+}
+.hero .heroImg-right {
+  position: absolute;
+  right: 15%;
+  bottom: -10%;
+}
+.hero .heroImg-right img {
+  width: 300px;
+  animation: animationRight 5s cubic-bezier(0.12, 0, 0.39, 0) 1s infinite alternate-reverse both;
+}
+
+body {
+  font-family: "Manrope";
+  font-size: 16px;
+  background-color: #fff6ec;
+}/*# sourceMappingURL=style.css.map */
