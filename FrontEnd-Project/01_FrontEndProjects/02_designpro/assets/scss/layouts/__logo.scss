@@ -1,0 +1,65 @@
+.logo {
+    margin-bottom: 80px;
+
+    .logo-wrapper {
+        .logoSection-title {
+            margin-bottom: 25px;
+
+            h3 {
+                font-size: $fz18;
+                text-align: center;
+                font-weight: $fw500;
+                font-family: $ff-Bricolage;
+                letter-spacing: 5px;
+            }
+        }
+
+        .logo-items {}
+
+        margin-bottom: 50px;
+    }
+
+    .quote {
+        // background: $Black;
+        background-image: url("/assets/images/logos/quote-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 100%;
+        padding: 40px 70px;
+        border-radius: 30px;
+
+        h4 {
+            font-family: $ff-Bricolage;
+            font-size: $fz30;
+            color: $white;
+            text-align: center;
+            line-height: 150%;
+
+            span {
+                color: $primary-Orange;
+            }
+        }
+
+        .profile {
+            padding-top: 50px;
+
+            img {
+                width: 120px;
+                padding-bottom: 10px;
+            }
+
+            h4 {
+                font-size: $fz30;
+                color: $white;
+                font-family: $ff-Bricolage;
+                line-height: 120%;
+            }
+
+            p {
+                font-size: $fz16;
+                color: $white;
+            }
+        }
+    }
+}

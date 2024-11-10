@@ -267,6 +267,59 @@ ul li {
   transform: scale(1.1);
 }
 
+.logo {
+  margin-bottom: 80px;
+}
+.logo .logo-wrapper {
+  margin-bottom: 50px;
+}
+.logo .logo-wrapper .logoSection-title {
+  margin-bottom: 25px;
+}
+.logo .logo-wrapper .logoSection-title h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque";
+  letter-spacing: 5px;
+}
+.logo .quote {
+  background-image: url("/assets/images/logos/quote-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+  padding: 40px 70px;
+  border-radius: 30px;
+}
+.logo .quote h4 {
+  font-family: "Bricolage Grotesque";
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 150%;
+}
+.logo .quote h4 span {
+  color: #ff4f01;
+}
+.logo .quote .profile {
+  padding-top: 50px;
+}
+.logo .quote .profile img {
+  width: 120px;
+  padding-bottom: 10px;
+}
+.logo .quote .profile h4 {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Bricolage Grotesque";
+  line-height: 120%;
+}
+.logo .quote .profile p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
 body {
   font-family: "Manrope";
   font-size: 16px;
