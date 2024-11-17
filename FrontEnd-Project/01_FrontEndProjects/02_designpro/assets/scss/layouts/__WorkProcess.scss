@@ -1,0 +1,90 @@
+.workProcess {
+    .section-titles {
+        padding-bottom: 50px;
+
+        h5 {
+            font-family: $ff-Bricolage;
+            font-size: $fz16;
+            font-weight: $fw400;
+            color: $Black;
+
+            i {}
+        }
+
+        h2 {
+            font-family: $ff-Bricolage;
+            font-weight: $fw600;
+            font-size: $fz80;
+            color: $Black;
+        }
+
+        p {
+            font-size: $fz20;
+            color: $Black;
+            font-weight: $fw400;
+
+        }
+    }
+
+    .workProcess-wrapper {
+        padding-bottom: 250px;
+
+        .workProcess-item {
+            text-align: center;
+
+            .icon {
+                color: $Black;
+                border: 1px solid $Black;
+                padding: 10px 12px;
+                display: inline-block;
+                border-radius: 50px;
+                position: relative;
+                font-size: $fz16;
+
+                &::before {
+                    content: "01";
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    background-color: $primary-Orange;
+                    height: 26px;
+                    width: 26px;
+                    line-height: 26px;
+                    text-align: center;
+                    border-radius: 50px;
+                    font-size: 12px;
+                    font-weight: $fw600;
+                    color: $white;
+                }
+            }
+
+            .icon2 {
+
+                &::before {
+                    content: "02";
+                }
+            }
+
+            .icon3 {
+
+                &::before {
+                    content: "03";
+                }
+            }
+
+            h4 {
+                font-family: $ff-Bricolage;
+                font-weight: $fw600;
+                font-size: $fz30;
+                color: $Black;
+            }
+
+            p {
+                font-size: $fz18;
+                color: $Black;
+                font-weight: $fw500;
+
+            }
+        }
+    }
+}

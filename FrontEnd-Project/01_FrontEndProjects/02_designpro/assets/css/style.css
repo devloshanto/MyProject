@@ -320,6 +320,74 @@ ul li {
   color: #ffffff;
 }
 
+.workProcess .section-titles {
+  padding-bottom: 50px;
+}
+.workProcess .section-titles h5 {
+  font-family: "Bricolage Grotesque";
+  font-size: 16px;
+  font-weight: 400;
+  color: #101010;
+}
+.workProcess .section-titles h2 {
+  font-family: "Bricolage Grotesque";
+  font-weight: 600;
+  font-size: 80px;
+  color: #101010;
+}
+.workProcess .section-titles p {
+  font-size: 20px;
+  color: #101010;
+  font-weight: 400;
+}
+.workProcess .workProcess-wrapper {
+  padding-bottom: 250px;
+}
+.workProcess .workProcess-wrapper .workProcess-item {
+  text-align: center;
+}
+.workProcess .workProcess-wrapper .workProcess-item .icon {
+  color: #101010;
+  border: 1px solid #101010;
+  padding: 10px 12px;
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  font-size: 16px;
+}
+.workProcess .workProcess-wrapper .workProcess-item .icon::before {
+  content: "01";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff4f01;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.workProcess .workProcess-wrapper .workProcess-item .icon2::before {
+  content: "02";
+}
+.workProcess .workProcess-wrapper .workProcess-item .icon3::before {
+  content: "03";
+}
+.workProcess .workProcess-wrapper .workProcess-item h4 {
+  font-family: "Bricolage Grotesque";
+  font-weight: 600;
+  font-size: 30px;
+  color: #101010;
+}
+.workProcess .workProcess-wrapper .workProcess-item p {
+  font-size: 18px;
+  color: #101010;
+  font-weight: 500;
+}
+
 body {
   font-family: "Manrope";
   font-size: 16px;
