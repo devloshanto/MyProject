@@ -1,0 +1,48 @@
+.header-section {
+    margin-top: -105px;
+
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+
+    .navbar {
+        height: 100px;
+
+
+        .navbar-brand {
+            img {
+                max-width: 110px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: var(--fx-secandary);
+                    font-weight: 600;
+                    padding: 0px 18px;
+                    text-transform: capitalize;
+                    transition: var(--fx-transition);
+
+                    &:hover {
+                        color: var(--fx-primary);
+                    }
+                }
+            }
+        }
+
+        .CTA-button {
+            @include Button-primary;
+        }
+    }
+
+}
+
+.scrolled {
+    background: var(--fx-white);
+    box-shadow: var(--fx-shadow);
+    /* Dark semi-transparent background */
+}

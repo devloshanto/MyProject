@@ -1,6 +1,5 @@
 .work {
-    padding-top: 50px;
-    padding-bottom: 150px;
+    @include pdTB;
 
     .work-img {
         width: 400px;

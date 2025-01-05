@@ -247,7 +247,7 @@ ul li {
 
 .work {
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 .work .work-img {
   width: 400px;
@@ -268,7 +268,8 @@ ul li {
 }
 
 .logo {
-  margin-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 .logo .logo-wrapper {
   margin-bottom: 50px;
@@ -320,31 +321,60 @@ ul li {
   color: #ffffff;
 }
 
+.workProcess {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
 .workProcess .section-titles {
   padding-bottom: 50px;
 }
 .workProcess .section-titles h5 {
   font-family: "Bricolage Grotesque";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  color: #101010;
+  color: #1f1f1f;
+  padding: 12px 20px;
+  border: 1px solid #ff4f01;
+  display: inline-block;
+  border-radius: 50px;
+}
+.workProcess .section-titles h5 .arrowIcon {
+  color: #ff4f01;
+  rotate: -60deg;
+  margin-right: 5px;
 }
 .workProcess .section-titles h2 {
   font-family: "Bricolage Grotesque";
   font-weight: 600;
   font-size: 80px;
+  line-height: 1.3em;
   color: #101010;
 }
 .workProcess .section-titles p {
   font-size: 20px;
   color: #101010;
   font-weight: 400;
-}
-.workProcess .workProcess-wrapper {
-  padding-bottom: 250px;
+  color: #1f1f1f;
+  line-height: 1.5em;
 }
 .workProcess .workProcess-wrapper .workProcess-item {
   text-align: center;
+  padding: 10px 30px;
+}
+.workProcess .workProcess-wrapper .workProcess-item .arrows1 {
+  position: absolute;
+  right: 55%;
+}
+.workProcess .workProcess-wrapper .workProcess-item .arrows1 img {
+  width: 80%;
+}
+.workProcess .workProcess-wrapper .workProcess-item .arrows2 {
+  position: absolute;
+  left: 55%;
+}
+.workProcess .workProcess-wrapper .workProcess-item .arrows2 img {
+  width: 80%;
 }
 .workProcess .workProcess-wrapper .workProcess-item .icon {
   color: #101010;

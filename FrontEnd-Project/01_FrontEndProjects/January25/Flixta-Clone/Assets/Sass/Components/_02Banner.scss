@@ -1,0 +1,110 @@
+.banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 18%;
+
+    .name-area {
+        .text {
+            // Text With Stock Color
+            display: block;
+            font-weight: 700;
+            font-size: var(--fx-font-80);
+            text-transform: uppercase;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--fx-primary);
+        }
+
+        .name {
+            font-size: 100px;
+            text-transform: uppercase;
+            letter-spacing: 3.7px;
+            font-weight: 900;
+            line-height: 1.17;
+
+            // white-space: nowrap;
+        }
+
+        .designation {
+            // text-align: left;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: var(--fx-font-36);
+        }
+    }
+
+    .description-area {
+        padding-top: 80px;
+
+        .description-left {
+
+            .des-card {
+                @include des-card;
+
+                p {
+                    color: var(--fx-secandary)black;
+                    font-size: var(--fx-font-18);
+                    font-weight: 500;
+                }
+
+                margin-bottom: 15px;
+            }
+
+            .social-icon {
+                padding-top: 15px;
+
+                a {
+                    background-color: var(--fx-white);
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50px;
+                    margin-right: 10px;
+                    font-size: var(--fx-font-18);
+                    box-shadow: var(--fx-shadow);
+                    transition: var(--fx-transition);
+
+                    &:hover {
+                        background-color: var(--fx-primary);
+                        color: var(--fx-white);
+                    }
+                }
+            }
+        }
+
+        .banner-image {
+
+            img {
+                max-height: 800px
+            }
+        }
+
+        .description-right {
+            .des-card {
+                @include des-card;
+            }
+
+            .circle {
+                margin-top: 25px;
+
+                .text {
+                    p {
+                        @include Button-primary;
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
+                        box-shadow: var(--fx-shadow);
+
+                    }
+                }
+            }
+        }
+    }
+
+}

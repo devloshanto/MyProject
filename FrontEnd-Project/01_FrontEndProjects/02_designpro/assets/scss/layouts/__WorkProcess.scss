@@ -1,36 +1,34 @@
 .workProcess {
+    position: relative;
+    @include pdTB;
+
     .section-titles {
-        padding-bottom: 50px;
-
-        h5 {
-            font-family: $ff-Bricolage;
-            font-size: $fz16;
-            font-weight: $fw400;
-            color: $Black;
-
-            i {}
-        }
-
-        h2 {
-            font-family: $ff-Bricolage;
-            font-weight: $fw600;
-            font-size: $fz80;
-            color: $Black;
-        }
-
-        p {
-            font-size: $fz20;
-            color: $Black;
-            font-weight: $fw400;
-
-        }
+        @include section-titles-Style;
     }
 
     .workProcess-wrapper {
-        padding-bottom: 250px;
 
         .workProcess-item {
             text-align: center;
+            padding: 10px 30px;
+
+            .arrows1 {
+                position: absolute;
+                right: 55%;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .arrows2 {
+                position: absolute;
+                left: 55%;
+
+                img {
+                    width: 80%;
+                }
+            }
 
             .icon {
                 color: $Black;

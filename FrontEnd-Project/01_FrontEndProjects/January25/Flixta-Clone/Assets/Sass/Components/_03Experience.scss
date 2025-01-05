@@ -1,0 +1,100 @@
+.Experience-section {
+    margin-top: var(--fx-pt120);
+    margin-bottom: var(--fx-pt120);
+
+    .Experience-top {
+        &__left {
+
+            .Experience-title {
+                font-size: var(--fx-font-136);
+                font-weight: 800;
+                color: var(--fx-secandary);
+                padding-bottom: 20px;
+            }
+
+            .Experience-des {
+                color: var(--fx-gray);
+                font-weight: 500;
+                line-height: 160%;
+                padding-right: 30px;
+            }
+        }
+
+        &__right {
+            img {
+                border-radius: 20px;
+                box-shadow: var(--fx-shadow);
+                margin-bottom: 20px;
+            }
+
+            p {color: var(--fx-gray);
+font-weight: 500;
+line-height: 160%;
+padding-bottom: 15px;
+            }
+
+            .projects-info {
+                .projects-item {
+                    h4 {
+                        color: var(--fx-primary);
+                        font-size: var(--fx-font-36);
+                        font-weight: 700;
+                    }
+
+                    p {
+                        font-size: var(--fx-font-16);
+                        color: var(--fx-secandary);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .Experience-Bottom {
+        padding-top: var(--fx-pt80);
+        gap: 30px;
+
+        .skill-items {
+            @include des-card;
+            width: 100%;
+            padding: 40px 30px;
+            display: inline-block;
+            border: 1px solid #ddd;
+            text-align: center;
+            background: var(--fx-light-blue);
+            position: relative;
+
+            img {
+                width: 50px;
+            }
+
+            h4 {
+                font-size: var(--fx-font-24);
+                font-weight: 600;
+                color: var(--fx-secandary);
+                padding: 15px 0px;
+            }
+
+            .skill-done {
+                height: 30px;
+                border-radius: 50px;
+                background: #f2f4ff;
+
+                .progress-bar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--fx-light-gray);
+                    font-size: var(--fx-font-16);
+                    font-weight: 600;
+                    background: var(--fx-white);
+                    border-radius: 50px;
+
+
+                }
+            }
+
+        }
+    }
+}

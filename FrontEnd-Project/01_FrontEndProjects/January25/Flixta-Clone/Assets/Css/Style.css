@@ -1,0 +1,421 @@
+/*
+Theme Name : Flixta - UI/UX Designer || HTML Template
+Theme Link : https://hello.com
+Support EMail : Flixta - UI/UX Designer || HTML Template Clone
+Version : 1.0 
+
+*/
+/* CSS Index
+============================
+
+*** Template Components ***
+============================
+
+00. Goolge Fonts
+01. Variable CSS
+02. Common CSS
+03. Header
+*/
+/*=============================
+	00. Goolge Fonts
+===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/*=============================
+	01. Variable CSS
+===============================*/
+:root {
+  --fx-primary: #5777ff;
+  --fx-secandary: #05100b;
+  --fx-light-gray: #666666;
+  --fx-gray: #00000099;
+  --fx-white: #ffffff;
+  --fx-light-blue: #F9FAFF;
+  --fx-font-18: 18px;
+  --fx-font-24: 24px;
+  --fx-font-16: 16px;
+  --fx-font-20: 20px;
+  --fx-font-36: 36px;
+  --fx-font-80: 80px;
+  --fx-font-153: 153px;
+  --fx-font-136: 136px;
+  --fx-transition: all .35s ease-in-out;
+  --fx-shadow: 0px 21px 32px 0px rgba(113, 76, 76, 0.05);
+  --fx-pt80: 80px;
+  --fx-pt100: 120px;
+  --fx-pt120: 120px;
+}
+
+body {
+  font-family: "Urbanist", serif;
+  font-size: 18px;
+  line-height: 160%;
+  position: relative;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fx-w30 {
+  width: 30%;
+}
+
+.fx-w50 {
+  width: 50%;
+}
+
+.fx-w70 {
+  width: 70%;
+}
+
+.fx-w90 {
+  width: 90%;
+}
+
+.fx-w95 {
+  width: 95%;
+}
+
+p {
+  color: var(--fx-gray);
+  font-weight: 500;
+  line-height: 160%;
+  padding-bottom: 15px;
+}
+
+.header-section {
+  margin-top: -105px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-section .navbar {
+  height: 100px;
+}
+.header-section .navbar .navbar-brand img {
+  max-width: 110px;
+}
+.header-section .navbar .navbar-nav .nav-item .nav-link {
+  color: var(--fx-secandary);
+  font-weight: 600;
+  padding: 0px 18px;
+  text-transform: capitalize;
+  transition: var(--fx-transition);
+}
+.header-section .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--fx-primary);
+}
+.header-section .navbar .CTA-button {
+  background: var(--fx-primary);
+  color: var(--fx-white);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 100px;
+  transition: var(--fx-transition);
+}
+.header-section .navbar .CTA-button:hover {
+  background: var(--fx-secandary);
+  cursor: pointer;
+}
+
+.scrolled {
+  background: var(--fx-white);
+  box-shadow: var(--fx-shadow);
+  /* Dark semi-transparent background */
+}
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 18%;
+}
+.banner-section .name-area .text {
+  display: block;
+  font-weight: 700;
+  font-size: var(--fx-font-80);
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--fx-primary);
+}
+.banner-section .name-area .name {
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+  font-weight: 900;
+  line-height: 1.17;
+}
+.banner-section .name-area .designation {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: var(--fx-font-36);
+}
+.banner-section .description-area {
+  padding-top: 80px;
+}
+.banner-section .description-area .description-left .des-card {
+  background-color: var(--fx-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--fx-shadow);
+  margin-bottom: 15px;
+}
+.banner-section .description-area .description-left .des-card p {
+  color: var(--fx-secandary) black;
+  font-size: var(--fx-font-18);
+  font-weight: 500;
+}
+.banner-section .description-area .description-left .social-icon {
+  padding-top: 15px;
+}
+.banner-section .description-area .description-left .social-icon a {
+  background-color: var(--fx-white);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-size: var(--fx-font-18);
+  box-shadow: var(--fx-shadow);
+  transition: var(--fx-transition);
+}
+.banner-section .description-area .description-left .social-icon a:hover {
+  background-color: var(--fx-primary);
+  color: var(--fx-white);
+}
+.banner-section .description-area .banner-image img {
+  max-height: 800px;
+}
+.banner-section .description-area .description-right .des-card {
+  background-color: var(--fx-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--fx-shadow);
+}
+.banner-section .description-area .description-right .circle {
+  margin-top: 25px;
+}
+.banner-section .description-area .description-right .circle .text p {
+  background: var(--fx-primary);
+  color: var(--fx-white);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 100px;
+  transition: var(--fx-transition);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-shadow: var(--fx-shadow);
+}
+.banner-section .description-area .description-right .circle .text p:hover {
+  background: var(--fx-secandary);
+  cursor: pointer;
+}
+
+.Experience-section {
+  margin-top: var(--fx-pt120);
+  margin-bottom: var(--fx-pt120);
+}
+.Experience-section .Experience-top__left .Experience-title {
+  font-size: var(--fx-font-136);
+  font-weight: 800;
+  color: var(--fx-secandary);
+  padding-bottom: 20px;
+}
+.Experience-section .Experience-top__left .Experience-des {
+  color: var(--fx-gray);
+  font-weight: 500;
+  line-height: 160%;
+  padding-right: 30px;
+}
+.Experience-section .Experience-top__right img {
+  border-radius: 20px;
+  box-shadow: var(--fx-shadow);
+  margin-bottom: 20px;
+}
+.Experience-section .Experience-top__right p {
+  color: var(--fx-gray);
+  font-weight: 500;
+  line-height: 160%;
+  padding-bottom: 15px;
+}
+.Experience-section .Experience-top__right .projects-info .projects-item h4 {
+  color: var(--fx-primary);
+  font-size: var(--fx-font-36);
+  font-weight: 700;
+}
+.Experience-section .Experience-top__right .projects-info .projects-item p {
+  font-size: var(--fx-font-16);
+  color: var(--fx-secandary);
+  font-weight: 600;
+}
+.Experience-section .Experience-Bottom {
+  padding-top: var(--fx-pt80);
+  gap: 30px;
+}
+.Experience-section .Experience-Bottom .skill-items {
+  background-color: var(--fx-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--fx-shadow);
+  width: 100%;
+  padding: 40px 30px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  text-align: center;
+  background: var(--fx-light-blue);
+  position: relative;
+}
+.Experience-section .Experience-Bottom .skill-items img {
+  width: 50px;
+}
+.Experience-section .Experience-Bottom .skill-items h4 {
+  font-size: var(--fx-font-24);
+  font-weight: 600;
+  color: var(--fx-secandary);
+  padding: 15px 0px;
+}
+.Experience-section .Experience-Bottom .skill-items .skill-done {
+  height: 30px;
+  border-radius: 50px;
+  background: #f2f4ff;
+}
+.Experience-section .Experience-Bottom .skill-items .skill-done .progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fx-light-gray);
+  font-size: var(--fx-font-16);
+  font-weight: 600;
+  background: var(--fx-white);
+  border-radius: 50px;
+}
+
+.service-section {
+  padding-top: var(--fx-pt100);
+  padding-bottom: var(--fx-pt100);
+  overflow: hidden;
+}
+.service-section .text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  white-space: nowrap;
+  -webkit-animation: scroll2 18s linear infinite;
+  animation: scroll2 18s linear infinite;
+}
+.service-section .text-wrapper .text-slide {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-section .text-wrapper .text-slide h2 {
+  font-size: var(--fx-font-136);
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--fx-primary);
+}
+.service-section .service-wrapper {
+  padding-top: 80px;
+}
+.service-section .service-wrapper .service-item {
+  padding: 25px;
+  transition: var(--fx-transition);
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.service-section .service-wrapper .service-item img {
+  width: 50px;
+}
+.service-section .service-wrapper .service-item a {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  color: var(--fx-secandary);
+  font-size: var(--fx-font-24);
+  list-style: 36px;
+  font-weight: 700;
+  transition: var(--fx-transition);
+}
+.service-section .service-wrapper .service-item a:hover {
+  color: var(--fx-primary);
+}
+.service-section .service-wrapper .service-item:hover {
+  background: var(--fx-light-blue);
+  border: 1px solid var(--fx-primary);
+  cursor: pointer;
+  box-shadow: var(--fx-shadow);
+}
+
+@keyframes scroll2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - 2.6rem));
+    transform: translateX(calc(-100% - 2.6rem));
+  }
+}
+.portfolio-section {
+  padding-bottom: 120px;
+}
+.portfolio-section .section-title {
+  padding-top: var(--fx-pt100);
+  padding-bottom: 40px;
+  text-align: center;
+}
+.portfolio-section .section-title h4 {
+  font-size: var(--fx-font-20);
+  font-weight: 600;
+  line-height: 160%;
+  color: var(--bs-primary);
+  letter-spacing: 2px;
+}
+.portfolio-section .section-title h2 {
+  font-size: 50px;
+  color: var(--fx-secandary);
+  line-height: 59px;
+  font-weight: 700;
+}
+.portfolio-section .portfolio-wrapper .swiper .swiper-wrapper .swiper-slide {
+  width: 410px;
+  margin-right: 30px;
+}
+.portfolio-section .portfolio-wrapper .swiper .swiper-wrapper .swiper-slide .slider-card img {
+  border-radius: 15px 15px 15px 15px;
+  width: 30%;
+  padding-bottom: 20px;
+}
+.portfolio-section .portfolio-wrapper .swiper .swiper-wrapper .swiper-slide .slider-card p {
+  color: var(--fx-primary);
+  padding-bottom: 0px;
+}
+.portfolio-section .portfolio-wrapper .swiper .swiper-wrapper .swiper-slide .slider-card a {
+  color: var(--fx-secandary);
+  font-size: var(--fx-font-24);
+  font-weight: 700;
+  transition: var(--fx-transition);
+}
+.portfolio-section .portfolio-wrapper .swiper .swiper-wrapper .swiper-slide .slider-card a:hover {
+  color: var(--fx-primary);
+}
+.portfolio-section .portfolio-wrapper .swiper .swiper-scrollbar {
+  background: red;
+}/*# sourceMappingURL=Style.css.map */

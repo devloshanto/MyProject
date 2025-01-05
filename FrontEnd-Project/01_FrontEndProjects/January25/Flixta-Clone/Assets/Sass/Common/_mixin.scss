@@ -1,0 +1,46 @@
+@mixin Button-primary {
+    background: var(--fx-primary);
+    color: var(--fx-white);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 35px;
+    border-radius: 100px;
+    transition: var(--fx-transition);
+
+    &:hover {
+        background: var(--fx-secandary);
+        cursor: pointer;
+    }
+}
+
+
+@mixin des-card {
+    background-color: var(--fx-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--fx-shadow);
+}
+
+@mixin Section-Title {
+    .section-title {
+        padding-top: var(--fx-pt100);
+        padding-bottom: 40px;
+        text-align: center;
+
+        h4 {
+            font-size: var(--fx-font-20);
+            font-weight: 600;
+            line-height: 160%;
+            color: var(--bs-primary);
+            letter-spacing: 2px;
+            ;
+        }
+
+        h2 {
+            font-size: 50px;
+            color: var(--fx-secandary);
+            line-height: 59px;
+            font-weight: 700;
+        }
+    }
+}

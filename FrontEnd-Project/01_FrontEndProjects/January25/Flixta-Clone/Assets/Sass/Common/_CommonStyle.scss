@@ -1,0 +1,105 @@
+/*
+Theme Name : Flixta - UI/UX Designer || HTML Template
+Theme Link : https://hello.com
+Support EMail : Flixta - UI/UX Designer || HTML Template Clone
+Version : 1.0 
+
+*/
+
+
+/* CSS Index
+============================
+
+*** Template Components ***
+============================
+
+00. Goolge Fonts
+01. Variable CSS
+02. Common CSS
+03. Header
+*/
+
+/*=============================
+	00. Goolge Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*=============================
+	01. Variable CSS
+===============================*/
+
+:root {
+    // Colors
+    --fx-primary: #5777ff;
+    --fx-secandary: #05100b;
+    --fx-light-gray: #666666;
+    --fx-gray: #00000099;
+    --fx-white: #ffffff;
+    --fx-light-blue: #F9FAFF;
+
+    // Font Size
+    --fx-font-18: 18px;
+    --fx-font-24: 24px;
+    --fx-font-16: 16px;
+    --fx-font-20: 20px;
+    --fx-font-36: 36px;
+    --fx-font-80: 80px;
+    --fx-font-153: 153px;
+    --fx-font-136: 136px;
+
+    // Transiition
+    --fx-transition: all .35s ease-in-out;
+
+    // Box Shadow
+    --fx-shadow: 0px 21px 32px 0px rgba(113, 76, 76, 0.05);
+
+    // Spacing
+    --fx-pt80: 80px;
+    --fx-pt100: 120px;
+    --fx-pt120: 120px;
+
+}
+
+body {
+    font-family: "Urbanist", serif;
+    font-size: 18px;
+    line-height: 160%;
+    position: relative;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+// width
+
+
+.fx-w30 {
+    width: 30%;
+}
+
+.fx-w50 {
+    width: 50%;
+}
+
+.fx-w70 {
+    width: 70%;
+}
+
+.fx-w90 {
+    width: 90%;
+}
+
+.fx-w95 {
+    width: 95%;
+}
+
+p {
+
+    color: var(--fx-gray);
+    font-weight: 500;
+    line-height: 160%;
+    padding-bottom: 15px;
+}

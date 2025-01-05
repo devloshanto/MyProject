@@ -1,0 +1,85 @@
+// Button Style
+@mixin btn {
+
+    font-size: $fz20;
+    font-family: $ff-Bricolage;
+    font-weight: $fw500;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+// Button Primary Style
+@mixin btnPrimary {
+    background-color: $primary-Orange;
+    border: 2px solid $Black;
+    color: $white;
+    transition: all .35s ease-in-out;
+
+    &:hover {
+        background: $Black;
+        border: 2px solid $primary-Orange;
+    }
+}
+
+// Button Seandary Style
+@mixin btnSeandary {
+
+    background-color: $Black;
+    border: 2px solid $primary-Orange;
+    color: $white;
+    transition: all .35s ease-in-out;
+
+    &:hover {
+        background: $primary-Orange;
+        border: 2px solid $Black;
+    }
+}
+
+
+// Section Title
+
+@mixin section-titles-Style {
+    padding-bottom: 50px;
+
+    h5 {
+        font-family: $ff-Bricolage;
+        font-size: $fz18;
+        font-weight: $fw400;
+        color: $Dark-Gary;
+        padding: 12px 20px;
+        border: 1px solid $primary-Orange;
+        display: inline-block;
+        border-radius: 50px;
+
+
+        .arrowIcon {
+            color: $primary-Orange;
+            rotate: -60deg;
+            margin-right: 5px;
+        }
+    }
+
+    h2 {
+        font-family: $ff-Bricolage;
+        font-weight: $fw600;
+        font-size: $fz80;
+        line-height: 1.3em;
+        color: $Black;
+    }
+
+    p {
+        font-size: $fz20;
+        color: $Black;
+        font-weight: $fw400;
+        color: $Dark-Gary;
+        line-height: 1.5em;
+
+    }
+}
+
+// Padding Top Bottom
+
+@mixin pdTB {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
