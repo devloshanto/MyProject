@@ -374,7 +374,7 @@ p {
   }
 }
 .portfolio-section {
-  padding-bottom: 120px;
+  padding-bottom: var(--fx-pt80);
 }
 .portfolio-section .section-title {
   padding-top: var(--fx-pt100);
@@ -421,4 +421,82 @@ p {
 }
 .portfolio-section .portfolio-wrapper .swiper .swiper-scrollbar {
   background: red;
+}
+
+.resume-section {
+  padding-bottom: var(--fx-pt80);
+  background-color: var(--fx-light-blue);
+}
+.resume-section .section-title {
+  padding-top: var(--fx-pt100);
+  padding-bottom: 40px;
+  text-align: center;
+}
+.resume-section .section-title h4 {
+  font-size: var(--fx-font-20);
+  font-weight: 600;
+  line-height: 160%;
+  color: var(--bs-primary);
+  letter-spacing: 2px;
+}
+.resume-section .section-title h2 {
+  font-size: 50px;
+  color: var(--fx-secandary);
+  line-height: 59px;
+  font-weight: 700;
+}
+.resume-section .exp-header {
+  font-size: var(--fx-font-36);
+  font-weight: 700;
+  color: var(--fx-secandary);
+  padding-bottom: 20px;
+}
+.resume-section .Experience-wrapper .Experience-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 99;
+}
+.resume-section .Experience-wrapper .Experience-item .year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume-section .Experience-wrapper .Experience-item .year h4 {
+  background: var(--fx-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--fx-shadow);
+  font-size: var(--fx-font-24);
+  font-weight: 600;
+  color: var(--fx-gray);
+  transition: var(--fx-transition);
+}
+.resume-section .Experience-wrapper .Experience-item .year::after {
+  position: absolute;
+  content: "";
+  border: 1px dotted var(--fx-gray);
+  height: 55px;
+  z-index: -1;
+  top: 85%;
+}
+.resume-section .Experience-wrapper .Experience-item .exp-info {
+  padding-top: 20px;
+}
+.resume-section .Experience-wrapper .Experience-item .exp-info h4 {
+  font-size: var(--fx-font-24);
+  color: var(--fx-secandary);
+  font-weight: 700;
+}
+.resume-section .Experience-wrapper .Experience-item .exp-info p {
+  color: var(--fx-light-gray);
+}
+.resume-section .Experience-wrapper .Experience-item:hover .year h4 {
+  background: var(--fx-primary);
+  color: var(--fx-white);
+}
+.resume-section .Experience-wrapper .Experience-item:last-child .year::after {
+  content: none;
 }/*# sourceMappingURL=Style.css.map */

@@ -1,5 +1,5 @@
 .portfolio-section {
-    padding-bottom: 120px;
+    padding-bottom: var(--fx-pt80);
     @include Section-Title;
 
     .portfolio-wrapper {

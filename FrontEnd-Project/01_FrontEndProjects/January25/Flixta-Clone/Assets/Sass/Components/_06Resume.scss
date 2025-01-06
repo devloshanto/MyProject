@@ -1,0 +1,84 @@
+.resume-section {
+    @include Section-Title;
+    padding-bottom: var(--fx-pt80);
+    background-color: var(--fx-light-blue);
+
+    .exp-header {
+        font-size: var(--fx-font-36);
+        font-weight: 700;
+        color: var(--fx-secandary);
+        padding-bottom: 20px;
+    }
+
+    .Experience-wrapper {
+
+        .Experience-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            z-index: 99;
+
+
+            .year {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h4 {
+                    background: var(--fx-white);
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: var(--fx-shadow);
+                    font-size: var(--fx-font-24);
+                    font-weight: 600;
+                    color: var(--fx-gray);
+                    transition: var(--fx-transition);
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    border: 1px dotted var(--fx-gray);
+                    height: 55px;
+                    z-index: -1;
+                    top: 85%;
+                }
+
+
+
+
+            }
+
+            .exp-info {
+                padding-top: 20px;
+
+                h4 {
+                    font-size: var(--fx-font-24);
+                    color: var(--fx-secandary);
+                    font-weight: 700;
+                }
+
+                p {
+                    color: var(--fx-light-gray);
+                }
+            }
+
+            &:hover {
+                .year {
+                    h4 {
+                        background: var(--fx-primary);
+                        color: var(--fx-white);
+                    }
+                }
+            }
+
+            &:last-child {
+                .year::after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
