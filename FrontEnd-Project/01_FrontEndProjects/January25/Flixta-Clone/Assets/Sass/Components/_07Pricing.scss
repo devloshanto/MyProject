@@ -1,0 +1,159 @@
+.pricing-section {
+    @include Section-Title;
+    padding-bottom: var(--fx-pt80);
+
+    .pricing-wrapper {
+        padding-top: 40px;
+
+        .pricing-item {
+            text-align: center;
+            background: var(--fx-light-blue);
+            border-radius: 10px;
+            border-top: 2px solid var(--fx-primary);
+            padding: 0px 30px;
+
+            .pricing-name {
+                padding-top: 55px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #6666662f;
+
+                h3 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: var(--fx-secandary);
+                }
+
+                p {
+                    font-size: var(--fx-font-16);
+                    line-height: 30px;
+                    color: var(--fx-light-gray);
+                }
+            }
+
+            .pricing-price {
+
+                padding: 40px 0px;
+                border-bottom: 1px solid #6666662f;
+
+                h2 {
+                    font-size: 60px;
+                    line-height: 100%;
+                    color: var(--fx-secandary);
+                    font-weight: 700;
+                }
+
+                h6 {
+                    line-height: 100%;
+                    color: var(--fx-light-gray);
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: var(--fx-font-16);
+                    line-height: 100%;
+                    color: var(--fx-light-gray);
+                    line-height: 120%;
+                    font-weight: 400;
+                }
+
+                .pricing-CTA {
+                    background: var(--fx-secandary);
+                    color: var(--fx-white);
+                    display: inline-block;
+                    width: 100%;
+                    padding: 15px 5px;
+                    border-radius: 50px;
+                    transition: var(--fx-transition);
+
+                    &:hover {
+                        background: var(--fx-primary);
+                    }
+                }
+            }
+
+            .pricing-info {
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .pricing-info-item {
+
+                    p {
+                        font-weight: 500;
+                    }
+
+                }
+
+                .info-active {
+                    // display: inline-block;
+
+                    p {
+                        color: var(--fx-secandary);
+                    }
+
+                    svg {
+                        color: var(--fx-primary);
+                    }
+                }
+
+                .info-disable {
+
+                    p {
+                        color: var(--fx-gray);
+                    }
+
+                    svg {
+                        color: var(--fx-gray);
+                    }
+                }
+            }
+        }
+
+        .most-populer {
+            position: relative;
+            border-top: 2px solid transparent;
+            border-radius: 0;
+
+            .pricing-price {
+
+                padding: 40px 0px;
+                border-bottom: 1px solid #6666662f;
+
+                h2 {
+                    font-size: 60px;
+                    line-height: 100%;
+                    color: var(--fx-primary);
+                    font-weight: 700;
+                }
+
+                .pricing-CTA {
+                    background: var(--fx-primary);
+                    color: var(--fx-white);
+                    display: inline-block;
+                    width: 100%;
+                    padding: 15px 5px;
+                    border-radius: 50px;
+                    transition: var(--fx-transition);
+
+                    &:hover {
+                        background: var(--fx-secandary);
+                    }
+                }
+            }
+
+            .tag {
+                background: var(--fx-primary);
+                position: absolute;
+                top: -7%;
+                width: 100%;
+                left: 0;
+                border-radius: 10px 10px 0px 0px;
+
+                p {
+                    padding-top: 10px;
+                    color: var(--fx-white);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

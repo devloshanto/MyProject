@@ -81,7 +81,6 @@ p {
   color: var(--fx-gray);
   font-weight: 500;
   line-height: 160%;
-  padding-bottom: 15px;
 }
 
 .header-section {
@@ -499,4 +498,144 @@ p {
 }
 .resume-section .Experience-wrapper .Experience-item:last-child .year::after {
   content: none;
+}
+
+.pricing-section {
+  padding-bottom: var(--fx-pt80);
+}
+.pricing-section .section-title {
+  padding-top: var(--fx-pt100);
+  padding-bottom: 40px;
+  text-align: center;
+}
+.pricing-section .section-title h4 {
+  font-size: var(--fx-font-20);
+  font-weight: 600;
+  line-height: 160%;
+  color: var(--bs-primary);
+  letter-spacing: 2px;
+}
+.pricing-section .section-title h2 {
+  font-size: 50px;
+  color: var(--fx-secandary);
+  line-height: 59px;
+  font-weight: 700;
+}
+.pricing-section .pricing-wrapper {
+  padding-top: 40px;
+}
+.pricing-section .pricing-wrapper .pricing-item {
+  text-align: center;
+  background: var(--fx-light-blue);
+  border-radius: 10px;
+  border-top: 2px solid var(--fx-primary);
+  padding: 0px 30px;
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-name {
+  padding-top: 55px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.1843137255);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-name h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--fx-secandary);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-name p {
+  font-size: var(--fx-font-16);
+  line-height: 30px;
+  color: var(--fx-light-gray);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-price {
+  padding: 40px 0px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.1843137255);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-price h2 {
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--fx-secandary);
+  font-weight: 700;
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-price h6 {
+  line-height: 100%;
+  color: var(--fx-light-gray);
+  font-weight: 600;
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-price p {
+  font-size: var(--fx-font-16);
+  line-height: 100%;
+  color: var(--fx-light-gray);
+  line-height: 120%;
+  font-weight: 400;
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-price .pricing-CTA {
+  background: var(--fx-secandary);
+  color: var(--fx-white);
+  display: inline-block;
+  width: 100%;
+  padding: 15px 5px;
+  border-radius: 50px;
+  transition: var(--fx-transition);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-price .pricing-CTA:hover {
+  background: var(--fx-primary);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-info .pricing-info-item p {
+  font-weight: 500;
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-info .info-active p {
+  color: var(--fx-secandary);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-info .info-active svg {
+  color: var(--fx-primary);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-info .info-disable p {
+  color: var(--fx-gray);
+}
+.pricing-section .pricing-wrapper .pricing-item .pricing-info .info-disable svg {
+  color: var(--fx-gray);
+}
+.pricing-section .pricing-wrapper .most-populer {
+  position: relative;
+  border-top: 2px solid transparent;
+  border-radius: 0;
+}
+.pricing-section .pricing-wrapper .most-populer .pricing-price {
+  padding: 40px 0px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.1843137255);
+}
+.pricing-section .pricing-wrapper .most-populer .pricing-price h2 {
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--fx-primary);
+  font-weight: 700;
+}
+.pricing-section .pricing-wrapper .most-populer .pricing-price .pricing-CTA {
+  background: var(--fx-primary);
+  color: var(--fx-white);
+  display: inline-block;
+  width: 100%;
+  padding: 15px 5px;
+  border-radius: 50px;
+  transition: var(--fx-transition);
+}
+.pricing-section .pricing-wrapper .most-populer .pricing-price .pricing-CTA:hover {
+  background: var(--fx-secandary);
+}
+.pricing-section .pricing-wrapper .most-populer .tag {
+  background: var(--fx-primary);
+  position: absolute;
+  top: -7%;
+  width: 100%;
+  left: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+.pricing-section .pricing-wrapper .most-populer .tag p {
+  padding-top: 10px;
+  color: var(--fx-white);
+  font-weight: 700;
 }/*# sourceMappingURL=Style.css.map */
