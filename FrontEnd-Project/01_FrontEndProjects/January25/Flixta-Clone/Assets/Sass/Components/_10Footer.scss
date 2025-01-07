@@ -1,0 +1,38 @@
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: var(--fx-light-blue);
+
+    img {
+        max-width: 120px;
+    }
+
+    .footer-menu {
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+
+        a {
+            font-size: var(--fx-font-20);
+            color: var(--fx-light-gray);
+            font-weight: 500;
+            line-height: 30px;
+            transition: var(--fx-transition);
+
+            &:hover {
+                color: var(--fx-primary);
+            }
+        }
+    }
+
+    .copywrite {
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            color: var(--fx-light-gray);
+            line-height: 30px;
+        }
+    }
+}
