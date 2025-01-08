@@ -1,3 +1,10 @@
+/**
+ * Stylesheet:  Style.css
+ * Theme:       Flixta-Clone - UI/UX Designer || HTML Template
+ * Version:     1.0
+ * Author:     	Shanto
+ */
+/* Theme Default CSS */
 /*
 Theme Name : Flixta - UI/UX Designer || HTML Template
 Theme Link : https://hello.com
@@ -30,14 +37,14 @@ Version : 1.0
   --fx-gray: #00000099;
   --fx-white: #ffffff;
   --fx-light-blue: #F9FAFF;
-  --fx-font-18: 18px;
-  --fx-font-24: 24px;
-  --fx-font-16: 16px;
-  --fx-font-20: 20px;
-  --fx-font-36: 36px;
-  --fx-font-80: 80px;
-  --fx-font-153: 153px;
-  --fx-font-136: 136px;
+  --fx-font-18: 1.125rem;
+  --fx-font-24: 1.5rem;
+  --fx-font-16: 1rem;
+  --fx-font-20: 1.25rem;
+  --fx-font-36: 2.25rem;
+  --fx-font-80: 5rem;
+  --fx-font-153: 9.563rem;
+  --fx-font-136: 8.5rem;
   --fx-transition: all .35s ease-in-out;
   --fx-shadow: 0px 21px 32px 0px rgba(113, 76, 76, 0.05);
   --fx-pt80: 80px;
@@ -83,6 +90,14 @@ p {
   line-height: 160%;
 }
 
+/* Theme Pages CSS */
+/* Table of contents
+=========================
+1.Preloader
+
+Footer
+
+===========================*/
 .header-section {
   margin-top: -105px;
   background-color: transparent;
@@ -638,6 +653,73 @@ p {
   padding-top: 10px;
   color: var(--fx-white);
   font-weight: 700;
+}
+
+.testimonial {
+  padding-bottom: var(--fx-pt80);
+}
+.testimonial .section-title {
+  padding-top: var(--fx-pt100);
+  padding-bottom: 40px;
+  text-align: center;
+}
+.testimonial .section-title h4 {
+  font-size: var(--fx-font-20);
+  font-weight: 600;
+  line-height: 160%;
+  color: var(--bs-primary);
+  letter-spacing: 2px;
+}
+.testimonial .section-title h2 {
+  font-size: 50px;
+  color: var(--fx-secandary);
+  line-height: 59px;
+  font-weight: 700;
+}
+.testimonial .testimonial-item {
+  padding: 30px;
+  background-color: var(--fx-light-blue);
+  border: 1px solid rgba(102, 102, 102, 0.1843137255);
+  transition: var(--fx-transition);
+}
+.testimonial .testimonial-item .testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonial .testimonial-item .testimonial-header .left h4 {
+  font-size: var(--fx-font-24);
+  color: var(--fx-secandary);
+  font-weight: 700;
+}
+.testimonial .testimonial-item .testimonial-header .left .ratting span svg {
+  color: var(--fx-primary);
+}
+.testimonial .testimonial-item .testimonial-header .right span svg {
+  width: 46px;
+  height: auto;
+  color: var(--fx-light-gray);
+  transition: var(--fx-transition);
+}
+.testimonial .testimonial-item .testimonial-body p {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: var(--fx-light-gray);
+}
+.testimonial .testimonial-item .testimonial-footer h2 {
+  font-size: var(--fx-font-20);
+  font-weight: 700;
+  color: var(--fx-secandary);
+}
+.testimonial .testimonial-item .testimonial-footer p {
+  color: var(--fx-light-gray);
+}
+.testimonial .testimonial-item:hover {
+  border: 1px solid var(--fx-primary);
+}
+.testimonial .testimonial-item:hover .testimonial-header .right span svg {
+  color: var(--fx-primary);
 }
 
 .footer-section {

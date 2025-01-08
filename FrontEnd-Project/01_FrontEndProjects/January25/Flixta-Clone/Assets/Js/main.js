@@ -68,4 +68,77 @@
       },
     },
   });
+
+  var swiper = new Swiper(".blogs", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    roundLengths: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: ".swiper-scrollbar",
+      clickable: true,
+    },
+    breakpoints: {
+      1400: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
+  var swiper = new Swiper(".testimonials", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      1400: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
 })(jQuery);
