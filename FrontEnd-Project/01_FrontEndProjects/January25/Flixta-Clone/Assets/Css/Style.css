@@ -431,6 +431,16 @@ Footer
     line-height: 120%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portfolio-section .section-title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .portfolio-section .section-title h2 {
+    font-size: var(--fx-font-36);
+    line-height: 120%;
+  }
+}
 .portfolio-section .portfolio-wrapper .swiper .swiper-wrapper .swiper-slide {
   width: 410px;
   margin-right: 30px;
@@ -493,6 +503,16 @@ Footer
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .resume-section .section-title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .resume-section .section-title h2 {
+    font-size: var(--fx-font-36);
+    line-height: 120%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .resume-section .section-title {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -590,6 +610,16 @@ Footer
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .pricing-section .section-title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .pricing-section .section-title h2 {
+    font-size: var(--fx-font-36);
+    line-height: 120%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-section .section-title {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -759,6 +789,16 @@ Footer
     line-height: 120%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial .section-title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .testimonial .section-title h2 {
+    font-size: var(--fx-font-36);
+    line-height: 120%;
+  }
+}
 .testimonial .testimonial-item {
   padding: 30px;
   background-color: var(--fx-light-blue);
@@ -842,6 +882,16 @@ Footer
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog .section-title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .blog .section-title h2 {
+    font-size: var(--fx-font-36);
+    line-height: 120%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog .section-title {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -1064,7 +1114,6 @@ Footer
   }
   /*** Service ***/
   .service-section {
-    padding-top: 50px;
     padding-bottom: 50px;
   }
   .service-section .text-wrapper .text-slide h2 {
@@ -1273,5 +1322,91 @@ Footer
   }
   .footer-section .footer-menu a {
     font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* ===== HOme Page Responsive ===== */
+  body {
+    font-size: 16px;
+  }
+  .header-section {
+    margin-top: -19vh;
+  }
+  .header-section .navbar-toggler {
+    border: none;
+  }
+  .header-section .collapse {
+    background: #ffffff;
+    width: 100%;
+    padding: 20px 20px;
+    box-shadow: var(--fx-shadow);
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .header-section .navbar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-section .nav-item {
+    border-bottom: 1px solid var(--fx-light-blue);
+    padding-bottom: 10px;
+    transition: var(--fx-transition);
+  }
+  .header-section .nav-item:hover {
+    border-color: var(--fx-primary);
+  }
+  .header-section .nav-item:last-child {
+    border-bottom: none;
+  }
+  .header-section .navbar .CTA-button {
+    padding-top: 20px;
+    display: inline-block;
+  }
+  /*** Banner ***/
+  .banner-section {
+    padding-top: 20vh;
+    height: auto;
+  }
+  .banner-section .name-area .text {
+    font-size: var(--fx-font-36);
+  }
+  .banner-section .name-area .name {
+    font-size: 12vw;
+    letter-spacing: 2px;
+  }
+  .banner-section .name-area .designation {
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+  .banner-section .description-area {
+    padding-top: 50px;
+  }
+  .banner-section .description-area .description-left .social-icon {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  /*** Resume ***/
+  .resume-section {
+    padding-bottom: 50px;
+  }
+  .resume-section .Experience-wrapper .Experience-item .exp-info h4 {
+    font-size: var(--fx-font-20);
+  }
+  /*** Pricing ***/
+  .pricing-section {
+    padding-bottom: 50px;
+  }
+  .pricing-section .section-title {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .pricing-section .pricing-wrapper {
+    padding: 40px 10px 0px 10px;
+  }
+  .pricing-section .pricing-wrapper .pricing-item {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=Style.css.map */

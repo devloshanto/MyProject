@@ -192,7 +192,6 @@
 
     /*** Service ***/
     .service-section {
-        padding-top: 50px;
         padding-bottom: 50px;
 
         .text-wrapper {
@@ -281,6 +280,7 @@
             }
         }
     }
+
 
 }
 
@@ -500,7 +500,129 @@
 }
 
 // Medium devices -> md
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* ===== HOme Page Responsive ===== */
+    body {
+        font-size: 16px;
+    }
+
+    .header-section {
+        margin-top: -19vh;
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .collapse {
+            background: #ffffff;
+            width: 100%;
+            padding: 20px 20px;
+            box-shadow: var(--fx-shadow);
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .nav-item {
+            border-bottom: 1px solid var(--fx-light-blue);
+            padding-bottom: 10px;
+            transition: var(--fx-transition);
+
+            &:hover {
+                border-color: var(--fx-primary)
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .navbar .CTA-button {
+            padding-top: 20px;
+            display: inline-block;
+        }
+    }
+
+    /*** Banner ***/
+    .banner-section {
+        padding-top: 20vh;
+        height: auto;
+
+        .name-area {
+            .text {
+                font-size: var(--fx-font-36);
+            }
+
+            .name {
+                font-size: 12vw;
+                letter-spacing: 2px;
+            }
+
+            .designation {
+                letter-spacing: 3px;
+                font-size: 14px;
+            }
+        }
+
+        .description-area {
+            padding-top: 50px;
+
+            .description-left {
+                .social-icon {
+                    padding-top: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    /*** Resume ***/
+    .resume-section {
+        padding-bottom: 50px;
+
+        .Experience-wrapper {
+            .Experience-item {
+                .exp-info {
+                    h4 {
+                        font-size: var(--fx-font-20);
+                    }
+                }
+            }
+        }
+    }
+
+    /*** Pricing ***/
+    .pricing-section {
+        padding-bottom: 50px;
+
+        .section-title {
+            padding-top: 0px;
+            padding-bottom: 40px;
+        }
+
+        .pricing-wrapper {
+            padding: 40px 10px 0px 10px;
+
+            .pricing-item {
+                margin-bottom: 20px;
+            }
+
+            .most-populer {
+                // margin-top: 50px;
+            }
+        }
+    }
+
+}
 
 // Large devices -> lg
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}

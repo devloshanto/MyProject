@@ -71,4 +71,18 @@
             }
         }
     }
+
+    // Medium devices -> sm
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        .section-title {
+            padding-top: 50px;
+            padding-bottom: 30px;
+
+            h2 {
+                font-size: var(--fx-font-36);
+                line-height: 120%;
+            }
+        }
+    }
 }
