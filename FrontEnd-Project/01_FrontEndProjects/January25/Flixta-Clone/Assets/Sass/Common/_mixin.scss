@@ -43,4 +43,32 @@
             font-weight: 700;
         }
     }
+
+    // Small devices -> xs
+    @media only screen and (min-width: 0px) and (max-width: 576px) {
+
+        .section-title {
+            padding-top: 50px;
+            padding-bottom: 30px;
+
+            h2 {
+                font-size: var(--fx-font-36);
+                line-height: 120%;
+            }
+        }
+    }
+
+    // Small devices -> sm
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+        .section-title {
+            padding-top: 50px;
+            padding-bottom: 30px;
+
+            h2 {
+                font-size: var(--fx-font-36);
+                line-height: 120%;
+            }
+        }
+    }
 }

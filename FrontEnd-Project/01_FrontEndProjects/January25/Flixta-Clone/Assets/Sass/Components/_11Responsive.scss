@@ -1,8 +1,6 @@
 /* Narrow Phones */
 @media (min-width: 320px) and (max-width: 360px) {
-
     /* Styles for devices between 320px and 360px */
-
 }
 
 
@@ -34,42 +32,49 @@
 
 // ----------------------------------------------------
 
-@media (max-width: 1441px) {
-    body {
-        background-color: violet;
-    }
-}
+@media (max-width: 1441px) {}
 
-@media (max-width: 1199px) {
-    body {
-        background-color: gray;
-    }
-}
+@media (max-width: 1199px) {}
 
-@media (max-width: 1024px) {
-    body {
-        background-color: yellow;
-    }
-}
+@media (max-width: 1024px) {}
 
-@media (max-width: 991px) {
-    body {
-        background-color: pink;
-    }
-}
+@media (max-width: 991px) {}
 
-@media (max-width: 768px) {
-    body {
-        background-color: green;
-    }
-}
+@media (max-width: 768px) {}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {}
+
+
+// --------------------------------
+// Small devices -> xs
+@media only screen and (min-width: 0px) and (max-width: 350px) {}
+
+// Small devices -> sm
+@media only screen and (min-width: 0px) and (max-width: 767px) {}
+
+// Medium devices -> md
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+// Large devices -> lg
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+// Extra large devices  -> Xl
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+
+
+
+// --------------------------------
+//          FINAL Media Query
+// --------------------------------
+
+
+// Small devices -> xs
+@media only screen and (min-width: 0px) and (max-width: 576px) {
 
     /* ===== HOme Page Responsive ===== */
     body {
         font-size: 16px;
-        background-color: red;
     }
 
     .header-section {
@@ -205,6 +210,19 @@
         }
     }
 
+    /*** Resume ***/
+    .resume-section {
+        .Experience-wrapper {
+            .Experience-item {
+                .exp-info {
+                    h4 {
+                        font-size: var(--fx-font-20);
+                    }
+                }
+            }
+        }
+    }
+
     /*** Pricing ***/
     .pricing-section {
         padding-top: 50px;
@@ -228,7 +246,7 @@
         }
     }
 
-    /*** Pricing ***/
+    /*** Blog ***/
     .blog {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -245,6 +263,7 @@
 
             a {
                 padding: 15px 10px;
+                font-size: var(--fx-font-20);
             }
         }
     }
@@ -255,14 +274,236 @@
         padding-bottom: 20px;
 
         .footer-menu {
-            gap: 9px;
+            gap: 12px;
 
             a {
-
-                font-size: 14px;
+                font-size: 18px;
             }
         }
     }
 
+}
+
+// Small devices -> sm
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    /* ===== HOme Page Responsive ===== */
+    body {
+        font-size: 16px;
+    }
+
+    .header-section {
+        margin-top: -19vh;
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .collapse {
+            background: #ffffff;
+            width: 100%;
+            padding: 20px 20px;
+            box-shadow: var(--fx-shadow);
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .navbar-nav {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .nav-item {
+            border-bottom: 1px solid var(--fx-light-blue);
+            padding-bottom: 10px;
+            transition: var(--fx-transition);
+
+            &:hover {
+                border-color: var(--fx-primary)
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .navbar .CTA-button {
+            padding-top: 20px;
+            display: inline-block;
+        }
+    }
+
+    /*** Banner ***/
+    .banner-section {
+        padding-top: 20vh;
+        height: auto;
+
+        .name-area {
+            .text {
+                font-size: var(--fx-font-36);
+            }
+
+            .name {
+                font-size: 12vw;
+                letter-spacing: 2px;
+            }
+
+            .designation {
+                letter-spacing: 3px;
+                font-size: 14px;
+            }
+        }
+
+        .description-area {
+            padding-top: 50px;
+
+            .description-left {
+                .social-icon {
+                    padding-top: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    /*** Exparience ***/
+    .Experience-section {
+        .Experience-top__left {
+            .Experience-title {
+                font-size: 15vw;
+            }
+
+            .Experience-des {
+                letter-spacing: 1px;
+                padding-right: 0px;
+            }
+        }
+
+        .Experience-top__right {
+            .projects-info {
+                .projects-item h4 {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .Experience-Bottom {
+            gap: 15px;
+            padding-top: 50px;
+
+            .skill-items {
+                padding: 40px 20px;
+
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    /*** Service ***/
+    .service-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .text-wrapper {
+            .text-slide h2 {
+                font-size: 20vw;
+            }
+        }
+
+        .service-wrapper {
+            padding-top: 40px;
+
+            .service-item {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    /*** Resume ***/
+    .resume-section {
+        .Experience-wrapper {
+            .Experience-item {
+                .exp-info {
+                    h4 {
+                        font-size: var(--fx-font-20);
+                    }
+                }
+            }
+        }
+    }
+
+    /*** Pricing ***/
+    .pricing-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .section-title {
+            padding-top: 0px;
+            padding-bottom: 40px;
+        }
+
+        .pricing-wrapper {
+            padding: 40px 10px 0px 10px;
+
+            .pricing-item {
+                margin-bottom: 20px;
+            }
+
+            .most-populer {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    /*** Blog ***/
+    .blog {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .section-title {
+            padding-top: 0px;
+            padding-bottom: 40px;
+        }
+
+        .blog-item {
+            .blog-header {
+                padding: 0px 10px;
+            }
+
+            a {
+                padding: 15px 10px;
+                font-size: var(--fx-font-20);
+            }
+        }
+    }
+
+    /*** Footer ***/
+    .footer-section {
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+        .footer-menu {
+            gap: 12px;
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
 
 }
+
+// Medium devices -> md
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+// Large devices -> lg
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+// Extra large devices  ->Xl
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
