@@ -244,7 +244,7 @@ Footer
   margin-bottom: var(--fx-pt120);
 }
 .Experience-section .Experience-top__left .Experience-title {
-  font-size: var(--fx-font-136);
+  font-size: 8vw;
   font-weight: 800;
   color: var(--fx-secandary);
   padding-bottom: 20px;
@@ -285,7 +285,7 @@ Footer
   padding: 30px;
   border-radius: 10px;
   box-shadow: var(--fx-shadow);
-  width: 100%;
+  width: 33%;
   padding: 40px 30px;
   display: inline-block;
   border: 1px solid #ddd;
@@ -322,6 +322,8 @@ Footer
   padding-top: var(--fx-pt100);
   padding-bottom: var(--fx-pt100);
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 .service-section .text-wrapper {
   display: flex;
@@ -832,6 +834,7 @@ Footer
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 80px;
 }
 .footer-section .footer-menu a {
@@ -849,4 +852,199 @@ Footer
   font-weight: 400;
   color: var(--fx-light-gray);
   line-height: 30px;
+}
+
+/* Narrow Phones */
+@media (min-width: 320px) and (max-width: 360px) {
+  /* Styles for devices between 320px and 360px */
+}
+/* Medium Tablets */
+@media only screen and (max-width: 767px) {
+  /* Styles for devices between 541px and 768px */
+}
+/* Wide Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for devices between 769px and 1024px */
+}
+/* Small Laptops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Styles for devices between 1025px and 1366px */
+}
+/* Standard Laptops */
+@media (min-width: 1367px) and (max-width: 1600px) {
+  /* Styles for devices between 1367px and 1600px */
+}
+/* Large Monitors */
+@media (min-width: 1601px) and (max-width: 1920px) {
+  /* Styles for devices between 1601px and 1920px */
+}
+@media (max-width: 1441px) {
+  body {
+    background-color: violet;
+  }
+}
+@media (max-width: 1199px) {
+  body {
+    background-color: gray;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (max-width: 991px) {
+  body {
+    background-color: pink;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* ===== HOme Page Responsive ===== */
+  body {
+    font-size: 16px;
+    background-color: red;
+  }
+  .header-section {
+    margin-top: -19vh;
+  }
+  .header-section .navbar-toggler {
+    border: none;
+  }
+  .header-section .collapse {
+    background: #ffffff;
+    width: 100%;
+    padding: 20px 20px;
+    box-shadow: var(--fx-shadow);
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .header-section .navbar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-section .nav-item {
+    border-bottom: 1px solid var(--fx-light-blue);
+    padding-bottom: 10px;
+    transition: var(--fx-transition);
+  }
+  .header-section .nav-item:hover {
+    border-color: var(--fx-primary);
+  }
+  .header-section .nav-item:last-child {
+    border-bottom: none;
+  }
+  .header-section .navbar .CTA-button {
+    padding-top: 20px;
+    display: inline-block;
+  }
+  /*** Banner ***/
+  .banner-section {
+    padding-top: 20vh;
+    height: auto;
+  }
+  .banner-section .name-area .text {
+    font-size: var(--fx-font-36);
+  }
+  .banner-section .name-area .name {
+    font-size: 12vw;
+    letter-spacing: 2px;
+  }
+  .banner-section .name-area .designation {
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+  .banner-section .description-area {
+    padding-top: 50px;
+  }
+  .banner-section .description-area .description-left .social-icon {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  /*** Exparience ***/
+  .Experience-section .Experience-top__left .Experience-title {
+    font-size: 15vw;
+  }
+  .Experience-section .Experience-top__left .Experience-des {
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+  .Experience-section .Experience-top__right .projects-info .projects-item h4 {
+    font-size: 24px;
+  }
+  .Experience-section .Experience-Bottom {
+    gap: 15px;
+    padding-top: 50px;
+  }
+  .Experience-section .Experience-Bottom .skill-items {
+    padding: 40px 20px;
+  }
+  .Experience-section .Experience-Bottom .skill-items h4 {
+    font-size: 16px;
+  }
+  /*** Service ***/
+  .service-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .service-section .text-wrapper .text-slide h2 {
+    font-size: 20vw;
+  }
+  .service-section .service-wrapper {
+    padding-top: 40px;
+  }
+  .service-section .service-wrapper .service-item {
+    padding-bottom: 20px;
+  }
+  /*** Pricing ***/
+  .pricing-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pricing-section .section-title {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .pricing-section .pricing-wrapper {
+    padding: 40px 10px 0px 10px;
+  }
+  .pricing-section .pricing-wrapper .pricing-item {
+    margin-bottom: 20px;
+  }
+  .pricing-section .pricing-wrapper .most-populer {
+    margin-top: 50px;
+  }
+  /*** Pricing ***/
+  .blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .blog .section-title {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .blog .blog-item .blog-header {
+    padding: 0px 10px;
+  }
+  .blog .blog-item a {
+    padding: 15px 10px;
+  }
+  /*** Footer ***/
+  .footer-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .footer-section .footer-menu {
+    gap: 9px;
+  }
+  .footer-section .footer-menu a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Style.css.map */
